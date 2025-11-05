@@ -1,4 +1,10 @@
-#################DataBaseHR#######################
+###########################################################
+#  HR Database Analysis Project
+#  Author: Pooja Parashar
+#  Description: Comprehensive SQL analysis for HR database
+#  Includes employee, department, salary, performance & attrition analysis
+#  Database: hr
+###########################################################
 use hr;
 ############---Employee Details--------########### 
 #----1.Display All employees with their departments and job roles.----
