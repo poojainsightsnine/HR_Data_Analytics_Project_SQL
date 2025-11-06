@@ -2,7 +2,7 @@
 
 ### Overview
 This project contains a complete **SQL-based analysis of an HR database**, designed to explore insights about employees, departments, job roles, salaries, performance, and attrition.  
-It includes multiple analytical queries and reusable SQL views — ready for integration with **Power BI dashboards (coming soon)**.
+It includes multiple analytical queries and reusable SQL views — ready for integration with **Power BI dashboards (currently working on it)**.
 
 ---
 
@@ -51,14 +51,17 @@ It includes multiple analytical queries and reusable SQL views — ready for int
 | `Latest_Salary_View` | Captures the most recent salary data per employee |
 | `HR_Final_EmployeeReport_View` | Final master view combining all employee, salary, and performance details |
 
----
+**---Technical Implementation Highlights**
+
+Data Aggregation: Extensive use of GROUP BY and aggregate functions (AVG, SUM, COUNT, MIN, MAX) for departmental roll-ups.
+
+View Creation: Established several optimized views (e.g., HR_Final_EmployeeReport_View) to create a single, simplified master dataset by integrating employee, department, job role, latest salary, and latest performance data.
+
+Case Logic: Used CASE statements to quantify qualitative data (e.g., converting "Excellent" to 5) for numerical analysis.
 
 ## **Technologies Used**
 - **Database:** MySQL  
 - **Tools:** MySQL Workbench 
 - **Language:** SQL  
 
----
-
-   ```bash
    git clone https://github.com/<your-username>/HR-Database-Project.git
