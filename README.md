@@ -1,5 +1,4 @@
 ### HR_Data_Analytics_Project_SQL
-## 🧩 HR Database Analysis Project (MySQL)
 
 ### Overview
 This project contains a complete **SQL-based analysis of an HR database**, designed to explore insights about employees, departments, job roles, salaries, performance, and attrition.  
