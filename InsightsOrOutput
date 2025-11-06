@@ -1,0 +1,33 @@
+These queries demonstrate strong capabilities in several key areas of HR analytics. Here are high-level insights, categorized for your repository's README, focusing on the scope and types of analysis performed.
+
+📊 Key Analytical Insights & Capabilities
+This SQL project implements a robust set of queries and database views for comprehensive Human Resources data analysis, covering three main areas:
+
+1. 🧑‍💻 Employee & Organizational Structure Analysis
+The queries provide a foundational understanding of the workforce composition and structure:
+
+Organizational Mapping: Successfully established the manager-employee hierarchy and mapped all employees to their respective departments and job roles.
+
+Workforce Demographics: Identified employees based on specific criteria, such as date of joining (e.g., post-2020 hires) and salary thresholds (e.g., above $50,000).
+
+Data Integrity: Identified and located employees with missing or unassigned manager IDs.
+
+2. 💰 Compensation and Salary Trend Analysis
+The analysis provides detailed financial insights across the organization:
+
+Departmental Compensation: Calculated total and average salary for every department, revealing high-cost and cost-effective centers.
+
+Job Role Compensation: Determined the average salary for each job role and identified employees whose current salary exceeds the average for their job level.
+
+Salary History: Tracked and structured year-over-year salary trends for individual employees, enabling longitudinal compensation reviews.
+
+3. 📈 Performance and Attrition (Turnover) Metrics
+The project delivers crucial metrics for monitoring workforce health and stability:
+
+Attrition Rate Calculation: Computed the department-wise attrition count and percentage, highlighting areas with the highest employee turnover risk.
+
+Performance Benchmarking: Calculated the average performance score (quantified) for each department, allowing for objective comparison and management focus.
+
+Performance Distribution: Provided a count of employees categorized into each performance level (e.g., Excellent, Good), offering a quick view of overall workforce quality.
+
+Latest Scores: Created a mechanism (views) to consistently pull the latest available performance score for every employee.
