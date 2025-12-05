@@ -126,14 +126,15 @@ group by d.dept_name;
 ###---5.Show Attirition rate per department----
 select d.dept_name,round(count(case e.attrition_flag 
 			when "yes" then 1
-	  end)/count(e.emp_id),2)*100 as attirition_rate_percentage
+	  end)/average(e.emp_id),2)*100 as attirition_rate_percentage
 from employees as e     
 left join departments as d on d.dept_id=e.dept_id
 group by d.dept_name
 order by attirition_rate desc;
--- ----6.count how many employees fall in each performance category-----
+-- ----6.count how many employees fall in each performance category in last year-----
 select count(e.emp_id),p.performance_score from employees as e 
 join performance as p on e.emp_id=p.emp_id
+where p.year = (select max(year) from performance)	
 group by p.performance_score 
 order by count(e.emp_id) desc;
 ###---Hr Summary Table---
